@@ -1,0 +1,8 @@
+@font-face{
+    font-family: nullNormal;
+    src: url(../assets/null-free/Null_Free.otf);
+}
+.logo-font{
+    font-family: nullNormal;
+    color: #fff;
+}
