@@ -1,8 +1,30 @@
-@font-face{
-    font-family: nullNormal;
-    src: url(../assets/null-free/Null_Free.otf);
+@font-face {
+  font-family: nullNormal;
+  /* src: url(../assets/null_free/Null_Free.otf); */
+  src: url(../fonts/null_free/Null_Free.otf);
 }
-.logo-font{
-    font-family: nullNormal;
-    color: #fff;
+
+.logo-font {
+  font-family: nullNormal;
+  /* Fallback: Set a background color. */
+  background-color: rgb(0, 91, 147);
+
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 91, 147, 1) 0%,
+    rgba(16, 43, 81, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
